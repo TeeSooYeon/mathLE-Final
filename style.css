@@ -1,0 +1,96 @@
+.audiobox{
+    height:400px;
+    width:300px;
+    background-color: rgb(173, 173, 173);
+    border-radius: 5px;
+    position:absolute;
+    overflow: hidden;
+    transition: 0.5s;
+    padding: 15px;
+    z-index: 1;
+  }
+  h2{
+    padding-top: 0px;
+    text-align: center;
+    font-family: 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+    color: rgb(0, 0, 0);
+    letter-spacing: .4em;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  h3{
+    padding-top: 50px;
+    text-align: center;
+    font-family: 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: .4em;
+    font-weight: bold;
+  }
+  .wave{
+      top: 75%;
+      left: -117%;
+      width: 1000px;
+      height: 1025px;
+      background-color: #3b5bdb;
+      opacity:0.6;
+      position: absolute;
+      border-radius: 40%;
+      z-index: -1;
+    }
+  .wave.one{
+      animation: wave 15s linear -1s infinite;
+  }
+  .wave.two{
+      animation: wave 18s linear -1s infinite;
+  }
+  .wave.three{
+      animation: wave 21s linear -1s infinite;
+  }
+  @keyframes wave{
+    0%{
+      transform: rotate(0deg);
+    }
+    100%{
+      transform: rotate(360deg);
+    }
+  }
+html{
+    font-family: 'Sniglet', cursive;
+}
+.txtb{
+    width: 50px;
+    height: 30px;
+    padding: 10px 10px 8px 10px;
+    background-color: rgb(255, 254, 176);
+    border-radius: 10px;
+}
+.txtb:focus {
+    background-color: lightblue;
+  }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+.btn{
+    width: 80px;
+    height: 30px;
+    background-color: orange;
+    border: none;
+    transition: 0.2s;
+    font-family: 'Sniglet', cursive;
+    border-radius: 50px;
+}
+.btn:hover{
+    transform: scale(1.2);
+}
+footer{
+    position: absolute;
+    bottom: 0%;
+}
